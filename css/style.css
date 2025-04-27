@@ -1,0 +1,39 @@
+@keyframes glow {
+    from {
+        text-shadow: 0 0 1.26rem #ffffff
+    }
+    to {
+        text-shadow: 0 0 .5rem #ffffff
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes shimmer{
+    from {
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(100%);
+    }
+}
+
+@keyframes fill-color {
+    100% {
+        background-position: top left;
+    }
+}
+
+.navbar {
+    font-family: 'Uni Sans Semibold';
+    font-size: 1.7rem;
+    text-transform: none;
+}
+
+.navbar-brand {
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
