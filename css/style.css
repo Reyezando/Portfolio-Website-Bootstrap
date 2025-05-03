@@ -46,7 +46,7 @@ body {
     animation: glow 1.5s ease-in-out infinite alternate;
 }
 
-.body {
+.intro {
     .pp {
         display: flex;
         justify-content: center;
@@ -205,4 +205,9 @@ body {
     > div > div > div > div {
         font-size: 21.6px;
     }
+}
+
+.myCareer, .myProjects, .about {
+    font-family: 'Uni Sans Thin';
+    text-decoration: underline;
 }
