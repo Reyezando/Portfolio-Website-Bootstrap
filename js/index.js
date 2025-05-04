@@ -1,3 +1,25 @@
+// SPLIDE JS
+var splide = new Splide( '.splide', {
+    type: 'loop',
+    perPage: 5,
+    rewind : true
+} );
+  
+splide.mount();
+
+// JQUERY
+$(document).ready(function(){
+    $('.infoText').hide();
+    // $('btnInfoText').click(function()){
+    //     $('.infoText').show()
+    // }
+
+    $('.btnInfoText').click(function(){
+
+    })
+})
+
+// JS PRACTICE
 var data = [
     'Agya',
     'Calya',
@@ -184,6 +206,12 @@ const users = [
 
 users.forEach(user => {
     for(let v in user) {
-        console.log(user[v])
+        // console.log(user[v])
+        // document.writeln(user[v] + '<br>')
+        // document.getElementById("userDataPrint").innerHTML = user[v]
+        const dataUserMap = users.map(user => 
+            '<div class="col-lg-4 col-md-6"><img src="${user.avatar}" width="100%"><br><br><p>${user.email}<br>${user.first_name}<br>${user.last_name}<br></p></div>').join('')
+
+        listUser.innerHTML = '<div class="row">${dataUserMap}</div>'
     }
 })
