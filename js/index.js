@@ -2,7 +2,8 @@
 var splide = new Splide( '.splide', {
     type: 'loop',
     perPage: 5,
-    rewind : true
+    perMove: 3,
+    pagination: boolean = false
 } );
   
 splide.mount();

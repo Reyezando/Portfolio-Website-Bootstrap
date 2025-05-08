@@ -251,7 +251,10 @@ body {
 
     .links {
         min-height: 119.13px;
-        div {
+        u {
+            padding-bottom: 8px;
+        }
+        > div {
             column-count: 2;
             a {
                 color: #2D2D2D;
