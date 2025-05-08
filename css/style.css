@@ -100,7 +100,7 @@ body {
 } 
 
 .edutl {
-    margin: 0 auto 78.4px 21.67%;
+    margin: 0 auto 134px 21.67%;
     font-size: 16px;
     font-family: 'LeagueGothic';
 
@@ -177,6 +177,57 @@ body {
     animation: fill-color .1s linear forwards
 }
 
+.myCareer, .myProjects, .about {
+    font-family: 'Uni Sans Thin';
+    text-decoration: underline;
+    .judul {
+        padding-bottom: 90px;
+    }
+}
+
+.myCareer, .myProjects {
+    .container {
+        display: grid;
+        justify-content: center;
+    }
+    .video {
+        width: 560px;
+        height: 315px;
+    }
+}
+
+.myCareer {
+    padding-bottom: 160px;
+}
+
+.myProjects {
+    padding-bottom: 124px;
+}
+
+.about {
+    padding-bottom: 196px;
+    .judul {
+        text-align: center;
+    }
+}
+
+#slider-about {
+    
+    .splide__slide {
+        text-align: center;
+
+        img {
+            width: 100px;
+            height: auto;
+        }
+        li:last-child {
+            img {
+                border-radius: 100%;
+            }
+        }
+    }
+}
+
 .footer {
     display: flex;
     font-family: 'LeagueGothic';
@@ -200,26 +251,15 @@ body {
 
     .links {
         min-height: 119.13px;
+        div {
+            column-count: 2;
+            a {
+                color: #2D2D2D;
+            }
+        }
     }
 
     > div > div > div > div {
         font-size: 21.6px;
-    }
-}
-
-.myCareer, .myProjects, .about {
-    font-family: 'Uni Sans Thin';
-    text-decoration: underline;
-}
-
-#slider-about {
-    
-    .splide__slide {
-        text-align: center;
-
-        img {
-            width: 100px;
-            height: auto;
-          }
     }
 }
