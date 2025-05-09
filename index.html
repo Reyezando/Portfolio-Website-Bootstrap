@@ -35,13 +35,13 @@
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link scrollFunction" id="about" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">My Career</a>
+                        <a class="nav-link scrollFunction" id="myCareer" href="#">My Career</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">My Project</a>
+                        <a class="nav-link scrollFunction" id="myProjects" href="#">My Project</a>
                     </li>
                     <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -173,7 +173,7 @@
     <!-- End Intro -->
 
     <!-- My Career -->
-    <div class="myCareer">
+    <div id="myCareerContent" class="myCareer">
         <div class="container">
             <div class="row judul">
                 <h2>My Career</h2>
@@ -186,7 +186,7 @@
     <!-- End My Career -->
     
     <!-- My Projects -->
-    <div class="myProjects">
+    <div id="myProjectsContent" class="myProjects">
         <div class="container">
             <div class="row judul">
                 <h2>My Projects</h2>
@@ -199,7 +199,7 @@
     <!-- End My Projects -->
 
     <!-- About -->
-    <div class="about">
+    <div id="aboutContent" class="about">
         <div class="container">
             <div class="row judul">
                 <h2>About</h2>
@@ -241,7 +241,9 @@
                     </div>
                 </div>
                 <div class="links col-lg-6">
-                    <u>Links:</u>
+                    <div>
+                        <u>Links:</u>
+                    </div>
                     <div>
                         <div>
                             <a href="">WhatsApp</a>

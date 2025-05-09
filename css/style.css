@@ -215,10 +215,8 @@ body {
     
     .splide__slide {
         text-align: center;
-
         img {
             width: 100px;
-            height: auto;
         }
         li:last-child {
             img {
@@ -251,8 +249,8 @@ body {
 
     .links {
         min-height: 119.13px;
-        u {
-            padding-bottom: 8px;
+        > div:first-child {
+            padding-bottom: 9px;
         }
         > div {
             column-count: 2;

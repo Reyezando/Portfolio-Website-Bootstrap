@@ -3,7 +3,12 @@ var splide = new Splide( '.splide', {
     type: 'loop',
     perPage: 5,
     perMove: 3,
-    pagination: boolean = false
+    pagination: boolean = false,
+    breakpoints: {
+		767: {
+			perPage: 3,
+		},
+    }
 } );
   
 splide.mount();
@@ -17,6 +22,14 @@ $(document).ready(function(){
 
     $('.btnInfoText').click(function(){
 
+    })
+
+    $(document).on('click', '.scrollFunction', function(){
+        let id = $(this).attr('id')
+        if (id='about') {
+            var elem = document.getElementById("aboutContent");
+            elem.scrollIntoView()
+        }
     })
 })
 
