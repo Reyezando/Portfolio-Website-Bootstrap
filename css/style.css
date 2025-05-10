@@ -1,4 +1,5 @@
 body {
+    width: 100%;
     letter-spacing: normal;
     overflow-x: hidden;
 }
@@ -100,7 +101,7 @@ body {
 } 
 
 .edutl {
-    margin: 0 auto 134px 21.67%;
+    margin-left: 21.67%;
     font-size: 16px;
     font-family: 'LeagueGothic';
 
@@ -197,15 +198,15 @@ body {
 }
 
 .myCareer {
-    padding-bottom: 160px;
+    padding: 134px 0 80px 0;
 }
 
 .myProjects {
-    padding-bottom: 124px;
+    padding-top: 80px;
 }
 
 .about {
-    padding-bottom: 196px;
+    padding: 124px 0 196px 0;
     .judul {
         text-align: center;
     }
@@ -250,7 +251,7 @@ body {
     .links {
         min-height: 119.13px;
         > div:first-child {
-            padding-bottom: 9px;
+            padding-bottom: 8px;
         }
         > div {
             column-count: 2;
@@ -264,4 +265,14 @@ body {
     > div > div > div > div {
         font-size: 21.6px;
     }
+}
+
+#topButton {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+    bottom: 10px;
+    right: 10px;
+    width: 80px;
 }
