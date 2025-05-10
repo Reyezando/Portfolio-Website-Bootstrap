@@ -254,10 +254,11 @@ body {
         }
         > div {
             column-count: 2;
-            a {
-                color: #2D2D2D;
-            }
         }
+    }
+
+    a {
+        color: #2D2D2D;
     }
 
     > div > div > div > div {
