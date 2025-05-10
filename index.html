@@ -25,7 +25,7 @@
 <body>
 
     <!-- Nav Menu -->
-    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+    <nav id="navbar-example2" class="navbar navbar-expand-lg bg-primary px-3 sticky-top" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><img src="assets/relogo.png" alt=""></a>
             <a class="navbar-brand" href="#">REYNARDO ETANTYO . COM</a>
@@ -35,13 +35,13 @@
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link scrollFunction" id="about" href="#">About</a>
+                        <a class="nav-link scrollFunction" id="about" href="#aboutContent">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scrollFunction" id="myCareer" href="#">My Career</a>
+                        <a class="nav-link scrollFunction" id="myCareer" href="#myCareerContent">My Career</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scrollFunction" id="myProjects" href="#">My Project</a>
+                        <a class="nav-link scrollFunction" id="myProjects" href="#myProjectsContent">My Project</a>
                     </li>
                     <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
@@ -63,8 +63,9 @@
     </nav>
     <!-- End Nav Menu -->
 
+<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true">
     <!-- Intro -->
-    <div class="intro">
+    <div id="#intro" class="intro">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-3">
@@ -246,7 +247,7 @@
                     </div>
                     <div>
                         <div>
-                            <a href="">WhatsApp</a>
+                            <a href="https://wa.me/08111505710">WhatsApp</a>
                         </div>
                         <div>
                             <a href="">Discord</a>
@@ -284,6 +285,7 @@
         </div>
     </div>
     <!-- End Footer -->
+</div>
 
     <!-- Test Data User -->
     <!-- <div class="userData">

@@ -23,14 +23,6 @@ $(document).ready(function(){
     $('.btnInfoText').click(function(){
 
     })
-
-    $(document).on('click', '.scrollFunction', function(){
-        let id = $(this).attr('id')
-        if (id='about') {
-            var elem = document.getElementById("aboutContent");
-            elem.scrollIntoView()
-        }
-    })
 })
 
 // JS PRACTICE
