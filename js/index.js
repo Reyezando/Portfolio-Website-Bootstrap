@@ -31,6 +31,110 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+// TYPEWRITTER EFFECT
+const aText = [
+    "Hi, my name is Reynardo Etantyo.",
+    "\n",
+    "You can call me Reynard or Rey.",
+    "\n",
+    "Since I was a child, I’m prone to things like art and sport. At 5 years old, my hobby is to draw until the 8th grade of school. But I like sport too maybe since I was very very young, my dream or ambition is want to look cool while doing sport. But my hobby in sport first starts with football at 1th grade. And then basketball at 5th grade. Until now, probably the sports I like the most is basketball, badminton, and then football.",
+    "\n",
+    "And I also like logical thinking kind of way. Basically, I’m more of non-academic stuffs.",
+    "\n",
+    "And since I'm more of non-academic stuffs, I also like to think things creatively or out-of-the-box kind of way while also using logical thinking too to back my ideals based on reality.",
+    "\n",
+    "So, by that combination of things I like (art and logical thinking), a front-end web developer would be an ideal occupation for me in this modern age. It’s like a perfect match for me, whereas the coding part is where the logical thinking comes to play."
+];
+
+const iSpeed = 30;
+let iIndex = 0;
+let iArrLength = aText[0].length;
+let iTextPos = 0;
+let sContents = '';
+
+function typewriter() {
+    sContents = '';
+    const destination = document.querySelector('.intro__text');
+    
+    // Update the content with line breaks
+    for (let iRow = 0; iRow < iIndex; iRow++) {
+        sContents += aText[iRow] + '<br>';
+    }
+    
+    // Add the blinking caret only if there are more characters to print
+    const blinkCaret = (iIndex < aText.length - 1 || iTextPos < iArrLength) ? '<span></span>' : '';
+
+    destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + blinkCaret;
+
+    if (iTextPos++ === iArrLength) {
+        iTextPos = 0;
+        iIndex++;
+
+        if (iIndex < aText.length) {
+            iArrLength = aText[iIndex].length;
+            setTimeout(typewriter, 300);
+        }
+    } else {
+        setTimeout(typewriter, iSpeed);
+    }
+}
+
+
+// Start animation when top viewport reaches top of element
+document.addEventListener("DOMContentLoaded", () => {
+    // Select the trigger element (parent of .eduTitle)
+    const triggerElement = document.querySelector('.eduTitle').parentElement;
+  
+    // Select the elements to animate
+    const animateElements = [
+      { 
+        elements: document.querySelectorAll('.edutl > div > div:first-child'), 
+        className: 'animateCircle' 
+      },
+      { 
+        elements: document.querySelectorAll('.edutl > div:first-child'), 
+        className: 'animateBar' 
+      }
+    ];
+  
+    // Function to add class to each element in the NodeList
+    function addAnimationClass(elements, className) {
+      elements.forEach(element => {
+        element.classList.add(className);
+      });
+    }
+  
+    // Function to check if the top margin of the trigger element reaches the top of the viewport
+  function checkPosition() {
+    const triggerRect = triggerElement.getBoundingClientRect();
+    const marginTop = parseFloat(getComputedStyle(triggerElement).marginTop) || 0;
+
+    //  Increase marginTop with pixels
+    const increasedMarginTop = marginTop + 35;
+
+    if (triggerRect.top - increasedMarginTop <= 0) {
+      // Apply animation classes when the top margin of the trigger element reaches the viewport top
+      animateElements.forEach(item => {
+        addAnimationClass(item.elements, item.className);
+      });
+      // Remove the scroll event listener after triggering the animation
+      window.removeEventListener('scroll', checkPosition);
+    }
+  }
+
+  // Attach the scroll event listener
+  window.addEventListener('scroll', checkPosition);
+
+  // Initial check in case the page is already scrolled to the trigger element on load
+  checkPosition();
+});
+
+
+// Setup
+document.addEventListener('DOMContentLoaded', () => {
+    setTimeout("typewriter()", 650);
+});
+
 // JQUERY
 $(document).ready(function(){
     $('.infoText').hide();
