@@ -54,7 +54,7 @@ let sContents = '';
 
 function typewriter() {
     sContents = '';
-    const destination = document.querySelector('.intro__text');
+    const destination = document.querySelector('.text');
     
     // Update the content with line breaks
     for (let iRow = 0; iRow < iIndex; iRow++) {

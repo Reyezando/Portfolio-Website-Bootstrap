@@ -169,6 +169,12 @@ body {
   animation: fill-color 0.1s linear forwards;
 }
 
+span {
+  padding-right: 2px;
+  border-right: 2px solid;
+  animation: blink-caret 0.85s step-end infinite;
+}
+
 .myCareer, .myProjects, .about {
   font-family: "Uni Sans Thin";
   text-decoration: underline;

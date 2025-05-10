@@ -178,6 +178,12 @@ body {
     animation: fill-color .1s linear forwards
 }
 
+span {
+    padding-right: 2px;
+    border-right: 2px solid;
+    animation: blink-caret .85s step-end infinite
+}
+
 .myCareer, .myProjects, .about {
     font-family: 'Uni Sans Thin';
     text-decoration: underline;
@@ -213,6 +219,10 @@ body {
 }
 
 #slider-about {
+
+    // .splide__arrow {
+    //     background-color: rgba(white, 0);
+    // }
     
     .splide__slide {
         text-align: center;
