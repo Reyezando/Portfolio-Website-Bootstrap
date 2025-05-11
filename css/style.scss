@@ -216,14 +216,13 @@ body {
 
 #slider-about {
 
-    // .splide__arrow {
-    //     background-color: rgba(white, 0);
-    //     img {
-    //         height: 50px;
-    //         max-width: 104px;
-    //         box-shadow: 5px 10px 8px #888888;
-    //     }
-    // }
+    .splide__arrow {
+        // background-color: rgba(white, 0);
+        // img {
+        //     height: 50px;
+        //     max-width: 104px;
+        // }
+    }
     
     .splide__slide {
         text-align: center;
@@ -286,4 +285,5 @@ body {
     bottom: 10px;
     right: 10px;
     width: 80px;
+    fill: #2D2D2D;
 }
