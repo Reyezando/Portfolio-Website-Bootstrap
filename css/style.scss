@@ -174,7 +174,7 @@ body {
     animation: fill-color .1s linear forwards
 }
 
-span {
+.blinkCaret {
     padding-right: 2px;
     border-right: 2px solid;
     animation: blink-caret .85s step-end infinite
@@ -218,6 +218,11 @@ span {
 
     // .splide__arrow {
     //     background-color: rgba(white, 0);
+    //     img {
+    //         height: 50px;
+    //         max-width: 104px;
+    //         box-shadow: 5px 10px 8px #888888;
+    //     }
     // }
     
     .splide__slide {

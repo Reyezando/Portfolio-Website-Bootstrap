@@ -62,7 +62,7 @@ function typewriter() {
     }
     
     // Add the blinking caret only if there are more characters to print
-    const blinkCaret = (iIndex < aText.length - 1 || iTextPos < iArrLength) ? '<span></span>' : '';
+    const blinkCaret = (iIndex < aText.length - 1 || iTextPos < iArrLength) ? '<span class="blinkCaret"></span>' : '';
 
     destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + blinkCaret;
 

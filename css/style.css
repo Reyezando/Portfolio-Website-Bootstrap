@@ -165,7 +165,7 @@ body {
   animation: fill-color 0.1s linear forwards;
 }
 
-span {
+.blinkCaret {
   padding-right: 2px;
   border-right: 2px solid;
   animation: blink-caret 0.85s step-end infinite;
