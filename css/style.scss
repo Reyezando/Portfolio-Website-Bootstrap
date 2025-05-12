@@ -217,11 +217,19 @@ body {
 #slider-about {
 
     .splide__arrow {
-        // background-color: rgba(white, 0);
-        // img {
-        //     height: 50px;
-        //     max-width: 104px;
-        // }
+        width: 50px;
+        height: 100px;
+        border-radius: 0;
+        img {
+            height: 50px;
+            max-width: 104px;
+        }
+        &--prev {
+            background: linear-gradient(to right,rgba(black,.5),rgba(black,0));
+        }
+        &--next {
+            background: linear-gradient(to left,rgba(black,.5),rgba(black,0));
+        }
     }
     
     .splide__slide {

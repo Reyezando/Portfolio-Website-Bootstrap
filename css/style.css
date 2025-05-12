@@ -203,6 +203,21 @@ body {
   text-align: center;
 }
 
+#slider-about .splide__arrow {
+  width: 50px;
+  height: 100px;
+  border-radius: 0;
+}
+#slider-about .splide__arrow img {
+  height: 50px;
+  max-width: 104px;
+}
+#slider-about .splide__arrow--prev {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+#slider-about .splide__arrow--next {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
 #slider-about .splide__slide {
   text-align: center;
 }
