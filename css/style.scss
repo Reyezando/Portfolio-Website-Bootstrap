@@ -1,0 +1,303 @@
+body {
+    width: 100%;
+    letter-spacing: normal;
+    overflow-x: hidden;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 1.26rem #ffffff
+    }
+    to {
+        text-shadow: 0 0 .5rem #ffffff
+    }
+}
+
+@keyframes blink-caret {
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes shimmer{
+    from {
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(100%);
+    }
+}
+
+@keyframes fill-color {
+    100% {
+        background-position: top left;
+    }
+}
+
+.navbar {
+    font-family: 'Uni Sans Semibold';
+    font-size: 1.7rem;
+    text-transform: none;
+    min-height: 10rem;
+    padding: 0;
+}
+.navbar-brand {
+    max-height: 10rem;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+.nav-link {
+    color: white;
+}
+.nav-link:hover {
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+.nav-link:focus {
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+.intro {
+    .pp {
+        display: flex;
+        justify-content: center;
+        padding-top: 56px;
+
+        .circle {
+            height: 12.5rem;
+            width: 12.5rem;
+            border-radius: 50%;
+            background: url(../assets/fotoselfie.jpg);
+            background-size: cover;
+            background-position: -.3rem -2rem;
+        }
+    }
+
+    .text {
+        font-family: 'Inter';
+        font-size: 17.6px;
+        color: black;
+        padding-top: 80px;
+    }
+}
+
+.eduTitle {
+    margin: 56px auto 48px 26%;
+    overflow: hidden;
+    position: relative;
+    
+    > div:first-child {
+        position: absolute;
+        z-index: 1;
+        width: 237.359px;
+        height: 35px;
+        background: linear-gradient(65deg, rgba(white, 0) 20%, rgba(white, .5) 50%, rgba(white, 0) 80%);
+        animation: shimmer 2.5s infinite cubic-bezier(.3,.7,.7,1);
+    }
+    > div:last-child {
+        font-size: 22.4px;
+        z-index: 0;
+        color: #666666;
+        text-align: center;
+        font-family: 'JockeyOne';
+        background-color: #D9D9D9;
+        padding: 2px 6px;
+    }
+}
+
+.edutl {
+    margin-left: 21.67%;
+    font-size: 16px;
+    font-family: 'LeagueGothic';
+
+    > div {
+        display: flex;
+        margin-bottom: 24px;
+    }
+    > div:first-child {
+        position: absolute;
+        z-index: -1;
+        margin: 26px 0 0 9px;
+        width: 6px;
+        height: 540px;
+        background: linear-gradient(to bottom, #1B3E98 50%, #b8b8b8 50%);
+        background-size: 100% 200%;
+        background-position: bottom left;
+    }
+    > div > div:first-child {
+        margin: 3px 16px 0 0;
+        height: 24px;
+        width: 24px;
+        border-radius: 50%;
+        background: linear-gradient(to bottom, #1B3E98 50%, #b8b8b8 50%);
+        background-size: 100% 200%;
+        background-position: bottom left;
+    }
+    > div:nth-child(3) > div:first-child {
+        animation-duration: .1s;
+        animation-delay: .35s;
+    }
+    > div:nth-child(4) > div:first-child {
+        animation-duration: .1s;
+        animation-delay: .7s;
+    }
+    > div:nth-child(5) > div:first-child {
+        animation-duration: .1s;
+        animation-delay: 1.05s;
+    }
+    > div:nth-child(6) > div:first-child {
+        animation-duration: .1s;
+        animation-delay: 1.45s;
+    }
+    > div:nth-child(7) > div:first-child {
+        animation-duration: .085s;
+        animation-delay: 1.85s;
+    }
+    > div:nth-child(8) > div:first-child {
+        animation-duration: .085s;
+        animation-delay: 2.2s;
+    }
+    > div:nth-child(9) > div:first-child {
+        animation-duration: .1s;
+        animation-delay: 2.65s;
+    }
+    > div > div:nth-child(2) {
+        margin-right: 30px;
+        color: #1B3E98;
+        font-size: 25px;
+    }
+    > div > div:last-child {
+        font-size: 25px;
+    }
+    > div > div:last-child div:last-child {
+        color: #818181;
+        font-size: 19px;
+    }
+}
+
+.animateBar {
+    animation: fill-color 2.54s linear .1s forwards
+}
+
+.animateCircle {
+    animation: fill-color .1s linear forwards
+}
+
+.blinkCaret {
+    padding-right: 2px;
+    border-right: 2px solid;
+    animation: blink-caret .85s step-end infinite
+}
+
+.myCareer, .myProjects, .about {
+    font-family: 'Uni Sans Thin';
+    text-decoration: underline;
+    .judul {
+        padding-bottom: 90px;
+    }
+}
+
+.myCareer, .myProjects {
+    .container {
+        display: grid;
+        justify-content: center;
+    }
+    .video {
+        width: 560px;
+        height: 315px;
+    }
+}
+
+.myCareer {
+    padding: 134px 0 80px 0;
+}
+
+.myProjects {
+    padding-top: 80px;
+}
+
+.about {
+    padding: 124px 0 196px 0;
+    .judul {
+        text-align: center;
+    }
+}
+
+#slider-about {
+
+    .splide__arrow {
+        width: 50px;
+        height: 100px;
+        border-radius: 0;
+        img {
+            height: 50px;
+            max-width: 104px;
+        }
+        &--prev {
+            background: linear-gradient(to right,rgba(black,.5),rgba(black,0));
+        }
+        &--next {
+            background: linear-gradient(to left,rgba(black,.5),rgba(black,0));
+        }
+    }
+    
+    .splide__slide {
+        text-align: center;
+        img {
+            width: 100px;
+        }
+        li:last-child {
+            img {
+                border-radius: 100%;
+            }
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    font-family: 'LeagueGothic';
+    font-size: 24.64px;
+    color: #2D2D2D;
+    min-height: 13.125rem;
+    padding: 19.2px 16px;
+    background-color: #9A9A9A;
+
+    .contacts {
+        min-height: 119.13px;
+
+        .email {
+            margin-top: 8px;
+        }
+        
+        .wa {
+            margin-top: 6.4px;
+        }
+    }
+
+    .links {
+        min-height: 119.13px;
+        > div:first-child {
+            padding-bottom: 8px;
+        }
+        > div {
+            column-count: 2;
+        }
+    }
+
+    a {
+        color: #2D2D2D;
+    }
+
+    > div > div > div > div {
+        font-size: 21.6px;
+    }
+}
+
+#topButton {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    cursor: pointer;
+    bottom: 10px;
+    right: 10px;
+    width: 80px;
+}

@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Uni Sans SemiBold';
+    src: url(../fonts/uni-sans-semibold.ttf)
+}
+
+@font-face {
+    font-family: 'Uni Sans Thin';
+    src: url(../fonts/UniSansThin.otf)
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(../fonts/Inter-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'LeagueGothic';
+    src: url(../fonts/LeagueGothic-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'JockeyOne';
+    src: url(../fonts/JockeyOne-Regular.ttf);
+}
