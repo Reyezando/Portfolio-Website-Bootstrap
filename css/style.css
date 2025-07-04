@@ -223,9 +223,11 @@ body {
   max-width: 104px;
 }
 #slider-about .splide__arrow--prev {
+  left: 0;
   background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 #slider-about .splide__arrow--next {
+  right: 0;
   background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
 }
 #slider-about .splide__slide {
